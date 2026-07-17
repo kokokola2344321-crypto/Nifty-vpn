@@ -1,0 +1,11 @@
+#profile-title: ✈️Шахед впн✈️
+#announce: 🔰 Нажми на спидометр или молнию, чтобы проверить соединение. Меньше ms - лучше | n/a - не работает. Если ВПН плохо работает, то нажмите на 🔄️.
+#profile-update-interval: 1
+#support-url: m
+#profile-web-page-url: mю
+
+vless://e850fab3-5ac8-69cc-9f73-516c44a67afc@69.46.46.5:443?encryption=none&security=tls&sni=x4g-production-325d.up.railway.app&alpn=http%2F1.1&fp=chrome&type=ws&host=x4g-production-325d.up.railway.app&path=%2Fws%2Fe850fab3-5ac8-69cc-9f73-516c44a67afc#🇺🇲США
+vless://ecad47b0-249e-0006-adff-e3c8f02b1897@46.243.142.242:8443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=rutube.ru&fp=firefox&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&sid=43dcff53849b81e6&type=tcp&headerType=none#🇱🇻Латвия 
+vless://1f4c983e-382c-d2fa-b2dc-7981f02b34de@77.73.131.154:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=vindobona.org&fp=firefox&pbk=5GhMSJXQv1wXHVD999YHRRj83m-7VKH8qb_vTxBGbng&sid=08&type=tcp&headerType=none#🇬🇧Великобретания 
+vless://83cd3888-2ebe-4cb0-a012-d3c572358ac9@185.229.9.164:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=api-maps.yandex.ru&fp=qq&pbk=zMyJW8uYeZwurz4xCcnnPjYlCVP0nI5BDHp_0ZrxPjk&type=tcp&headerType=none#🇩🇪 Германия 
+hysteria2://95c61940-2823-4665-a033-d4f2218329b6@46.8.210.209:443?security=tls&fm=%7B%7D&sni=ru3.kinotorg.net#🇵🇱Польша 
