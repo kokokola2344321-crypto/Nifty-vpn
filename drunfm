@@ -2112,7 +2112,7 @@
         "protocol": "blackhole"
       }
     ],
-    "remarks": "🇷🇺 Обход LTE Россия #2",
+    "remarks": "🇷🇺 Обход LTE Россия #2 ",
     "log": {
       "access": "/storage/emulated/0/Android/data/com.happproxy/files/assets/logs/access/access_log.txt",
       "error": "/storage/emulated/0/Android/data/com.happproxy/files/assets/logs/error/1784415496940_error_log.txt"
