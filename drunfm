@@ -1,10 +1,5 @@
 [
   {
-    "profile": {
-      "name": "DrunFM"
-    }
-  }, 
-  {
     "log": {
       "loglevel": "warning",
       "access": "/storage/emulated/0/Android/data/com.happproxy/files/assets/logs/access/access_log.txt",
