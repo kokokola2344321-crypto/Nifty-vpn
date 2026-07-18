@@ -1661,5 +1661,111 @@
       ]
     },
     "remarks": "🇷🇺 🏳️Nifty🏳️"
-  }
+  },
+  {
+  "log": {
+    "access": "",
+    "error": "",
+    "loglevel": "warning"
+  },
+  "dns": {
+    "servers": [
+      "https://8.8.8.8/dns-query",
+      "https://1.1.1.1/dns-query",
+      "https+local://8.8.8.8/dns-query",
+      "https+local://1.1.1.1/dns-query"
+    ],
+    "queryStrategy": "UseIPv4"
+  },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": 10808,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      },
+      "sniffing": {
+        "destOverride": ["http", "quic", "tls"],
+        "enabled": true,
+        "excludedDomains": [],
+        "metadataOnly": false,
+        "routeOnly": true
+      },
+      "tag": "socks-in"
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": 10809,
+      "protocol": "http",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      },
+      "sniffing": {
+        "destOverride": ["http", "quic", "tls"],
+        "enabled": true,
+        "excludedDomains": [],
+        "metadataOnly": false,
+        "routeOnly": true
+      },
+      "tag": "http-in"
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "89.169.39.55",
+            "port": 443,
+            "users": [
+              {
+                "id": "c61ec320-29f1-4e00-9272-8b676e6957b4",
+                "security": "auto",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "alterId": 0
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "max.ru",
+          "fingerprint": "qq",
+          "show": false,
+          "publicKey": "Lbug_wz0y9xgKeDK44D9kuUap0fXzNKyv_nMJxnZRzU",
+          "shortId": "28a059440d3d5ba1"
+        }
+      }
+    },
+    {
+      "protocol": "freedom",
+      "domainStrategy": "ForceIPv4",
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "tag": "block"
+    }
+  ],
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "type": "field",
+        "network": "tcp,udp",
+        "outboundTag": "proxy"
+      }
+    ]
+  },
+  "remarks": "🇷🇺 AetrisVPN White list ┃ ✅ SNI: max.ru"
+ }
 ]
